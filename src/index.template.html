@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="title" content="有象视频" />
+    <meta name="keywords" content="有象, 有象视频, 视频, 视频网站, 电影, 综艺, 少儿, 电视剧, 直播, 高清视频, 在线观看" />
+    <meta name="description" content="有象视频，是金诚集团旗下杭州大象网络文化集团重点推出的综合性视频平台。依托于集团多年来在文化产业板块的深耕与布局，有象视频将自制、引入并聚合
+电影、电视剧、动漫、综艺、明星演唱会、竞技赛事、VR体验、在线直播等优质内容，打造一个“无广告、零插播、高清畅快”的全民VIP视频文化平台。" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" sizes="64x64" href="/public/logo.png">
+    <meta name="theme-color" content="#f60">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+      .element::-webkit-scrollbar {
+        display: none
+      }
+      .vjs-poster {
+        background-position: 50% 50% !important;
+        background-size: cover !important;
+      }
+      html {
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+      }
+
+      html::-webkit-scrollbar {
+        width: 0;
+      }
+      #skip a {  position:absolute;  left:-10000px;  top:auto;  width:1px;  height:1px;  overflow:hidden;  }
+      #skip a:focus {  position:static;  width:auto;  height:auto;  }
+    </style>
+  </head>
+  <body>
+  <div id="skip"><a href="#app">skip to content</a></div>
+  <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script src="//static.youxiang0210.com/video.min.js"></script>
+  <script src="//static.youxiang0210.com/videojs-contrib-hls.min.js"></script>
+  <!--vue-ssr-outlet-->
+  <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1262905767'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1262905767' type='text/javascript'%3E%3C/script%3E"));document.getElementById('cnzz_stat_icon_1262905767').style.display = 'none'</script>-->
+  <!-- baidu for tv -->
+  <!--<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6aa27040405faac0933d262f591727e3";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>-->
+  <!-- baidu for 0210 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?1ab4d9b1674bc940bc1eee056c58868f';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script type="text/javascript">var cnzz_protocol = ((document.location.protocol == 'https:') ? ' https://' : ' http://'); document.write(unescape("%3Cspan id='cnzz_stat_icon_1271658323'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1271658323' type='text/javascript'%3E%3C/script%3E")); document.getElementById('cnzz_stat_icon_1271658323').style.display = 'none'</script>
+  </body>
+</html>

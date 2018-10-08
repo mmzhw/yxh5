@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>有象视频</title>
+  <style>
+  body {
+    font-family: PingFang SC,Microsoft YaHei,Arial,Helvetica Neue Light,Source Han Sans CN,sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    margin-left: -245px;
+    width: 488px;
+    text-align: center;
+    height: 341px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+  }
+  .container img {
+    margin-top: 63px;
+    width: 83px;
+    height: 83px;
+  }
+  .text {
+    margin-top: 25px;
+  }
+  p {
+    line-height: 10px;
+    color: #959595;
+    font-size: 14px;
+  }
+  .more {
+    color: #000000;
+    font-size: 14px;
+    margin-top: 85px;
+  }
+  .more a {
+    color: #FABE00;
+  }
+  #layer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+  }
+  #qrcode {
+    display: none;
+    text-align: center;
+    top: 260px;
+    left: 50%;
+    margin-left: -134px;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 2;
+    width: 268px;
+    height: 268px;
+    border: 1px solid #DBDBDB;
+  }
+  .content {
+    margin-top: 50px;
+  }
+  .content p {
+    line-height: 8px;
+    font-size: 15px;
+    color: #000;
+  }
+  #qrcode img {
+    margin-top: 5px;
+    width: 116px;
+    height: 116px;
+    border: 2px solid #FABE00;
+  }
+  #close {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    background: url('/_static/assets/close.png') no-repeat;
+  }
+  </style>
+</head>
+<body>
+<div id="layer"></div>
+<div id="qrcode">
+  <div id='close'></div>
+  <div class="content">
+    <p>打开微信“扫一扫”</p>
+    <p>下载有象app</p>
+  </div>
+  <img src="/_static/assets/qrcode.png" alt="" />
+</div>
+<div id="wrap">
+  <div class="container">
+    <div class="sorry"><img src="/_static/assets/sorry.png" alt="" /></div>
+    <div class='text'>
+      <p>抱歉，大象tv在当前浏览器存在部分兼容问题</p>
+      <p>为保证完善、高质的观看体验，请尝试其他浏览器继续观看</p>
+    </div>
+    <div class="more">更多优质体验，欢迎下载<a href="javascript:void(0)" id='download'>大象app端</a></div>
+  </div>
+</div>
+<script type="text/javascript">
+  var download = document.getElementById('download');
+  var layer = document.getElementById('layer');
+  var qrcode = document.getElementById('qrcode');
+  var close = document.getElementById('close');
+
+  download.onclick = function() {
+    layer.style.display = 'block';
+    qrcode.style.display = 'block';
+  }
+
+  layer.onclick = function() {
+    layer.style.display = 'none';
+    qrcode.style.display = 'none';
+  }
+
+  close.onclick = function() {
+    layer.style.display = 'none';
+    qrcode.style.display = 'none';
+  }
+</script>
+</body>
+</html>
